@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Search Receipt</title>
+		<!-- Bootstrap CSS -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<!--	bootstrap css-->
+		<!--  CSS -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- <link rel="stylesheet" href="css/style2.css"> -->
+
+		<link rel="stylesheet" href="css/form.css">
+	</head>
+
+	<body>
+		<!--	!--	MENU CONTROLS-->
+
+		<header>
+			<div class="nav-holder"></div>
+
+			<nav class="navbar-expand main-navigation">
+				<ul class="navbar-nav">
+					<li class="nav-item toogle-btn">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGEAAAA1CAQAAAD7EE3JAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfjAx0ANwlQDC6OAAABCklEQVRo3u2YPQ6CQBQGB2LhDbyAsZGTYDyFWuj1jEex0HABTwCFyVqIpbD+hPcteUO7ITtkl+RNBsCcFVNSo+FEFQDYUBOSfGo2gYwFZybWH/Rr7ixzyoQFYEKZW+/hd9I/SEXOlT2N9U6+pOEQLhkAc9bMrPfzMTeOr59q0gRGcJ1dQQFXUMAVFHAFBVxBAVdQYAQKffOacp5pOFH1LVLPM22EeU8KU/WdZdddSCHPjCXCvCeNg1R0L9jKX+dd93UG7TzjEUYIV1DAFRRwBQVcQQFXUMAVFPjfSDN864gqGPHYtI7eghGP3YjaUzDisWsd4y8Y8VgepOL3lzyxaR1RBSOe4VtHWzAe1BymrNoaXZcAAAAASUVORK5CYII=" style=" width: 100%; height: 100%;"></image>
+				</svg>
+					</li>
+					<li class="nav-item logo"><a class="nav-link" href="index.html"><img src="img/logo/youtube-logo-png-transparent-image-5.png"></a></li>
+				</ul>
+				<span class="user-details">
+				<img class="icon" src="img/icons/notification.png">
+				<img class="dp" src="img/user/da1c015b357a03bc2468186e54c79795.jpg">
+				<ul class="navbar-nav name-discount">
+					<li class="name">Fname Lname</li>
+					<li class="discount">online</li>
+				</ul>
+
+<!--				toggle menu-->
+				<div class="toogle-user-container drop-shadow">
+					<div class="arrow-container">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  width="25px" height="20px">
+							<path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M12.000,0.000 L-0.000,20.000 L25.000,20.000 L12.000,0.000 Z"/>
+							</svg>
+					</div>
+					<ul class="toogle-user">
+
+					<li><a href="history.html">transaction history</a></li>
+					<li>update profile</li>
+					<li>invite friend</li>
+					<li>logout</li>
+				</ul>
+				</div>
+<!--				toggle menu-->
+			</span>
+			</nav>
+
+			<div class="toogle-menu-container hide">
+
+				<div class="menu-items">
+					<nav class="navbar-expand">
+						<ul class="navbar-nav">
+							<li class="nav-item toogle-btn">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGEAAAA1CAQAAAD7EE3JAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfjAx0ANwlQDC6OAAABCklEQVRo3u2YPQ6CQBQGB2LhDbyAsZGTYDyFWuj1jEex0HABTwCFyVqIpbD+hPcteUO7ITtkl+RNBsCcFVNSo+FEFQDYUBOSfGo2gYwFZybWH/Rr7ixzyoQFYEKZW+/hd9I/SEXOlT2N9U6+pOEQLhkAc9bMrPfzMTeOr59q0gRGcJ1dQQFXUMAVFHAFBVxBAVdQYAQKffOacp5pOFH1LVLPM22EeU8KU/WdZdddSCHPjCXCvCeNg1R0L9jKX+dd93UG7TzjEUYIV1DAFRRwBQVcQQFXUMAVFPjfSDN864gqGPHYtI7eghGP3YjaUzDisWsd4y8Y8VgepOL3lzyxaR1RBSOe4VtHWzAe1BymrNoaXZcAAAAASUVORK5CYII=" style=" width: 100%; height: 100%;"></image>
+						</svg>
+							</li>
+							<li class="nav-item logo"><a class="nav-link"><img src="img/logo/youtube-logo-png-transparent-image-5.png"></a></li>
+						</ul>
+					</nav>
+					<ul class="navbar-nav links-container">
+						<li><a class="nav-link" href="index.html"><img src="img/icons/simple-house-thin (1).png">Home</a></li>
+
+						<li><a class="nav-link toggle"><img src="img/icons/parking.png">Parking Fee</a>
+							<!-- Dropdown -->
+							<ul class="sub-menu ml-4">
+								<li class="py-2"><a href="daily parking.html">Daily Parking</a></li>
+								<li class="py-2"><a href="seasonal parking form.html">Seasonal Parking</a></li>
+								<li class="py-2"><a href="parking penalties.html">Penalties</a></li>
+								<li class="py-2"><a href="parking.html">Sacco Parking</a></li>
+								<li class="py-2"><a href="">Offstreet Parking</a></li>
+							</ul>
+						</li>
+
+						<li><a class="nav-link toggle"><img src="img/icons/house rent.png">Rent</a>
+							<!-- Dropdown -->
+							<ul class="sub-menu ml-4">
+								<li class="py-2"><a href="house rent form.html">House Rent</a></li>
+								<li class="py-2"><a href="market stalls rent.html">Market/Stalls Rent</a></li>
+								<li class="py-2"><a href="print stall receipt.html">House and Stalls Receipt</a></li>
+							</ul>
+						</li>
+
+						<li><a class="nav-link" href="land-rates.html"><img src="img/icons/land rate.png">Land Rate Payment</a>
+							<!-- Dropdown -->
+							<ul class="sub-menu ml-4">
+								<li class="py-2"><a href="pay land rate.html">Pay</a></li>
+								<li class="py-2"><a href="land-receipt.html">Receipt</a></li>
+							</ul>
+						</li>
+
+						<li><a class="nav-link" href="single-business-permit.html"><img src="img/icons/briefcase.png">Single Business Permit</a></li>
+
+						<li><a class="nav-link toggle"><img src="img/icons/land rate.png">Unified Business Permit</a>
+							<!-- Dropdown -->
+							<ul class="sub-menu ml-4">
+								<li class="py-2"><a href="renew UBP.html">Renew</a></li>
+								<li class="py-2"><a href="register-business.html">Register</a></li>
+								<li class="py-2"><a href="UBP receipt.html">Receipt</a></li>
+							</ul>
+						</li>
+
+						<li><a class="nav-link toggle"><img src="img/icons/land rate.png">Miscellaneous</a>
+							<!-- Dropdown -->
+							<ul class="sub-menu ml-4">
+								<li class="py-2"><a href="miss bill.html">Pay</a></li>
+								<li class="py-2"><a href="misc receipt.html">Receipt</a></li>
+							</ul>
+						</li>
+
+						<li><a class="nav-link toggle"><img src="img/icons/land rate.png">e-Construction</a>
+							<!-- Dropdown -->
+							<ul class="sub-menu ml-4">
+								<li class="py-2"><a href="construction permit.html">Pay</a></li>
+								<li class="py-2"><a href="e-construction invoice.html">Receipt</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</header>
+		<!--	MENU CONTROLS-->
+
+		<section class="container-fluid elements-container">
+			<div class="row the-form">
+				<div class="form-items-container">
+					<div class="col-lg-5 title-panel">
+					</div>
+
+					<div class="col-lg-7 form-container">
+						<h3>Search Receipt</h3>
+						<p>Enter plot number to continue</p>
+						<form>
+							<input type="text" placeholder="Enter Plot Number" pattern="" required>
+							<!--						location drop down-->
+
+							<!--						location drop down-->
+							<!--						car category drop down-->
+
+							<!--						car category drop down-->
+
+							<input type="check status">
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!--footer-->
+
+		<footer class="container-fluid text-center">
+			<p class="m-bottom-0">© 2019 <strong>Powerd By National Bank Of Kenya</strong> All Rights Reserved</p>
+		</footer>
+		<!--footer-->
+
+
+		<!--scripts-->
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+		<script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+		<script src="js/slider.js"></script>
+		<script type="text/javascript" src="js/popmotion.global.min.js"></script>
+		<script type="text/javascript" src="js/cleave.js"></script>
+		<script type="text/javascript" src="js/drop.js"></script>
+		<script type="text/javascript" src="js/submenuSlider.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<!--scripts-->
+	</body>
+
+</html>

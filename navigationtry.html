@@ -1,0 +1,1436 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+<script src="https://unpkg.com/feather-icons"></script>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/navigation-temp.css">
+<style>
+#sectionn {
+    width: 100%;
+    height: 150vh;
+    background: yellow;
+}
+ @charset "utf-8";
+/* CSS Document */
+* {
+    transition: all ease-in-out 300ms;
+}
+.search .search-input-div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: all ease-in-out 300ms;
+}
+.search .search-input {
+    width: 70%;
+    transition: all ease-in-out 300ms;
+    height: 44px;
+    line-height: 51px;
+    padding: 0 20px;
+    outline: 0;
+    font-size: 14px;
+    color: gray;
+    margin: 0px;
+    max-width: 100%;
+    width: 70%;
+    box-sizing: border-box;
+    display: block;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    box-shadow: 0 0 0px 0 rgba(0,0,0,.06);
+    font-weight: 100;
+    opacity: 1;
+    border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    width: 70%;
+    transition: all ease-in-out 300ms;
+}
+.search .search-input[type="text"]:focus {
+    width: 100%;
+    transition: all ease-in-out 300ms;
+}
+#add-shop, #sell-item {
+    border: 0;
+    border-radius: 2px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: .875em;
+    margin: 0;
+    padding: 10px 17px;
+    transition: box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    user-select: none;
+    align-items: flex-start;
+    text-align: center;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+#sell-item {
+    background: #1b8241;
+}
+#add-shop {
+    background: rgb(248, 94, 22);
+}
+#add-shop:hover, #sell-item:hover {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .50);
+}
+.header-v4 .logo_and_menu-row .btn-span-margin {
+    padding: 0px;
+}
+#mobileheader .mobileheader-v2 .basket-link .count {
+    display: none;
+}
+.svg-search.lg {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250.313 250.313" width="21" height="21" enable-background="new 0 0 250.313 250.313"><path d="M244.186 214.604l-54.379-54.378c-.289-.289-.628-.491-.93-.76 10.7-16.231 16.945-35.66 16.945-56.554 0-56.837-46.075-102.912-102.911-102.912s-102.911 46.075-102.911 102.911c0 56.835 46.074 102.911 102.91 102.911 20.895 0 40.323-6.245 56.554-16.945.269.301.47.64.759.929l54.38 54.38c8.169 8.168 21.413 8.168 29.583 0 8.168-8.169 8.168-21.413 0-29.582zm-141.275-44.458c-37.134 0-67.236-30.102-67.236-67.235 0-37.134 30.103-67.236 67.236-67.236 37.132 0 67.235 30.103 67.235 67.236s-30.103 67.235-67.235 67.235z" fill="black" fill-rule="evenodd" clip-rule="evenodd"/></svg>');
+}
+.svg-search.lg:hover {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250.313 250.313" width="21" height="21" enable-background="new 0 0 250.313 250.313"><path d="M244.186 214.604l-54.379-54.378c-.289-.289-.628-.491-.93-.76 10.7-16.231 16.945-35.66 16.945-56.554 0-56.837-46.075-102.912-102.911-102.912s-102.911 46.075-102.911 102.911c0 56.835 46.074 102.911 102.91 102.911 20.895 0 40.323-6.245 56.554-16.945.269.301.47.64.759.929l54.38 54.38c8.169 8.168 21.413 8.168 29.583 0 8.168-8.169 8.168-21.413 0-29.582zm-141.275-44.458c-37.134 0-67.236-30.102-67.236-67.235 0-37.134 30.103-67.236 67.236-67.236 37.132 0 67.235 30.103 67.235 67.236s-30.103 67.235-67.235 67.235z" fill="#00431b" fill-rule="evenodd" clip-rule="evenodd"/></svg>');
+}
+.svg-search {
+    background-color: inherit;
+}
+#headerfixed .logo-row.v2 .small-block >div {
+    min-height: 30px;
+    min-width: 45px;
+}
+.inline-search-block.fixed.big .search .search-input {
+    padding: 0 200px 0 25px;
+    font-size: 18px;
+    height: 42px;
+    background: none;
+    border: none;
+    border-radius: 0;
+    margin: 45px;
+    /* background: #f5f5f5; */
+    border: 1px solid #eee;
+}
+#toogle-search-bar {
+    top: -100%;
+}
+.inline-search-block.fixed.big.show {
+    top: -100%;
+}
+.jqmOverlay {
+    background: #3a3f44;
+    opacity: .7!important;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2999;
+    display: none;
+}
+.inline-search-block .close-block .close-icons {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    margin: -15px 0 0 -15px;
+    margin-top: -8px;
+    min-width: 16px;
+    min-height: 16px;
+    line-height: 16px;
+    background-color: white;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='53.7' height='53.7' viewBox='0 0 53.7 53.7'><path opacity='.6' fill='black' d='M35.6 34.4L28 26.8l7.6-7.6c.2-.2.2-.5 0-.7l-.5-.5c-.2-.2-.5-.2-.7 0l-7.6 7.6-7.5-7.6c-.2-.2-.5-.2-.7 0l-.6.6c-.2.2-.2.5 0 .7l7.6 7.6-7.6 7.5c-.2.2-.2.5 0 .7l.5.5c.2.2.5.2.7 0l7.6-7.6 7.6 7.6c.2.2.5.2.7 0l.5-.5c.2-.2.2-.5 0-.7z'/></svg>");
+}
+.inline-search-block .close-block .close-icons:hover {
+    background-color: white;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='53.7' height='53.7' viewBox='0 0 53.7 53.7'><path opacity='.6' fill='#00431b' d='M35.6 34.4L28 26.8l7.6-7.6c.2-.2.2-.5 0-.7l-.5-.5c-.2-.2-.5-.2-.7 0l-7.6 7.6-7.5-7.6c-.2-.2-.5-.2-.7 0l-.6.6c-.2.2-.2.5 0 .7l7.6 7.6-7.6 7.5c-.2.2-.2.5 0 .7l.5.5c.2.2.5.2.7 0l7.6-7.6 7.6 7.6c.2.2.5.2.7 0l.5-.5c.2-.2.2-.5 0-.7z'/></svg>");
+}
+.inline-search-block.fixed.big .search .close-block:hover .close-icons {
+    background-color: white;
+}
+.svg-search:hover {
+    background-color: white;
+}
+#headerfixed .logo-row.v2 .svg:hover {
+    background-color: white;
+}
+#sale-bottom-icon {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+    box-sizing: border-box;
+    border-style: none;
+    background: none;
+    outline: none;
+    line-height: normal;
+    font-weight: 500;
+    font-size: 20px;
+    height: auto;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: -3px 2px 11px 0 rgba(0, 0, 0, 0.78);
+    background-color: blue;
+    color: white;
+    background-color: #00431b;
+    color: white;
+    position: fixed;
+    z-index: 100;
+}
+.shop-item-container {
+    background: rgba(58, 63, 68, 0.7);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    z-index: 3100;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    transition: all 500ms cubic-bezier(0.49, 1.68, 0.92, 1.75) 550ms;
+    bottom: -100%;
+    transform: scale(0.3);
+    transform: rotateY(90deg);
+    transform-origin: center bottom;
+}
+.animate-shop-item-container {
+    transition: all 500ms cubic-bezier(0.49, 1.68, 0.92, 1.75) 550ms;
+    bottom: 0;
+    transform: scale(1);
+    transform: rotateY(0deg);
+    transform-origin: center bottom;
+}
+.shop-item-container span {
+    border-radius: 50%;
+    padding: 15px;
+    margin: 3px 15px;
+    z-index: 3100;
+    cursor: pointer;
+}
+.shop-item-container #sale-icon {
+    background-color: #00431b;
+}
+.shop-item-container #shop-icon {
+    background-color: orangered;
+}
+.shop-item-container div {
+    display: flex;
+    align-items: row;
+    flex-flow: column;
+    justify-content: center;
+    align-items: self-start;
+    color: white;
+    z-index: 3200;
+}
+.item-shop-trigger-btn {
+    bottom: 70px;
+    transition: all 400ms cubic-bezier(0.49, 1.68, 0.92, 1.75) 450ms;
+    right: 7px;
+}
+.btn-margin-change {
+    bottom: -100%;
+    transition: all 400ms cubic-bezier(0.49, 1.68, 0.92, 1.75) 450ms;
+}
+#mobilemenu .expanded>.dropdown {
+    display: block;
+    left: -100%;
+}
+.svg-arrow-right {
+    background-image: url(../images/7940.png);
+}
+a, .link, .button.transparent, .button.transparent:hover, .specials_slider_wrapp ul.tabs>li span, .tab_slider_wrapp ul.tabs>li span, .basket_wrapp .basket_block .link:hover+.wraps_icon_block+.text .title, .stores .stores_list .item a span, .phones .order_wrap_btn, .footer_bottom .all_menu_block ul li a:hover, .footer_bottom .submenu_top .menu_item a:hover, .avtorization-call.enter:hover span, .top-h-row .h-user-block a:hover, ul.menu .child li.menu_item a, #header .catalog_menu ul.menu>li.current>a, ul.menu .child .depth3 a, ul.menu .child li.menu_title a:hover, #header ul.menu li .child.submenu .child_wrapp a:not(.title), .img_block_capcha .reload, .h_color_white .center_block .menu.full>li:hover>a, .m_color_white #header .wrapper_middle_menu .menu.bottom>li:hover>a, .m_color_white #header .wrapper_middle_menu .menu.bottom>li.hover>a, body #header ul.menu li .child.line .child_wrapp>a:hover, .basket_sort ul.tabs li .wrap_li>span *, .basket_sort ul.tabs li .wrap_li>span, .bx_filter_parameters_box_title:hover, .bx_filter .bx_filter_popup_result a, .left_block .internal_sections_list .child_wrapp .child li.cur>a, .left_block .internal_sections_list .child_wrapp .child li.depth3 a.menu_item.cur, .left_block .internal_sections_list .child_wrapp a:hover, .ajax_load_btn:hover .more_text_ajax, .breadcrumbs a:hover span, .tabs-head li.current span, .item-stock .store_view, .reviews-post-reply-buttons a:hover, h4.hover, .button.transparent.white:hover, .button.white_bg, .item .child_container .child_wrapp .menu_item.current a, .item .child_container .child_wrapp .menu_item:hover a {
+    color: #0e65ab;
+}
+.svg_triangle_right {
+    background-image: url(../images/0a87638be517433b4846494d15db9126-right-arrowhead-by-vexels.png);
+}
+.dropdown {
+    height: auto;
+}
+.prof-container {
+    height: 252px;
+    width: 292px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-flow: column;
+	background-color: rgba(37, 34, 34, 0.1);
+   background: -webkit-linear-gradient(top left, #04ca4985 0%,#239049 24%,#1d2029 77%,#559023 100%);
+}
+.prof-container .prof-bg-img {
+    left: 0;
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.prof-container .prof-bg-img>img {
+    height: 100%;
+    width: 100%;
+	opacity: 0.5;
+}
+.prof-container .user-dp {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+}
+.prof-container .user-dp>img {
+    height: 80px;
+    width: 80px;
+}
+.prof-container p {
+    margin: 0px;
+    color: white;
+    /* background-color: red; */
+    position: relative;
+}
+.menu-row.middle-block:not(.bglight) .mega-menu table td .wrap > a:hover {
+    background-color: #239049;
+}
+.icon-off {
+    margin: 10px;
+    padding: 10px;
+    /* background-color: red; */
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+}
+.icon-off:hover img {
+    /*
+	background-color: orangered;
+	 border: 1px solid orangered;
+*/
+    transform-origin: center;
+    transform: scale(1.3);
+}
+.count-item {
+    width: 17px;
+    height: 17px;
+    line-height: 17px;
+    white-space: nowrap;
+    font-size: 12px;
+    color: #FFF;
+    border-radius: 8px;
+    text-align: center;
+    display: inline-flex;
+    /* position: absolute; */
+    right: 0;
+    top: 50%;
+    margin-top: -8px;
+    font-weight: initial;
+    left: auto;
+    color: orangered;
+    background-color: #ff45005e;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+@media only screen and (min-width: 990px) {
+#img-slider {
+    display: none;
+}
+#sale-button-container {
+    display: none;
+}
+.sale-button-container {
+    display: none;
+}
+.show {
+    display: none!important;
+}
+}
+.profile-pic img {
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    margin: 5px;
+}
+.profile-pic .dropdown {
+    box-shadow: 5px 10px 18px 2px #00000054;
+    padding: 0px 10px 10px;
+    border-radius: 1px;
+    position: absolute;
+    background-color: white;
+    top: 0px;
+    right: 5px;
+    z-index: 100000000000000000;
+    padding-right: 0px;
+    padding-left: 0px;
+    display: none;
+}
+.profile-pic .dropdown > li {
+    color: gray;
+    padding: 7px 15px;
+}
+.profile-pic .dropdown > li font {
+    vertical-align: inherit;
+    color: #808080bf;
+}
+.profile-pic .dropdown > li:first-child {
+    background-color: #80808038;
+    padding: 2px;
+}
+.profile-pic .dropdown > li ul {
+    float: right;
+    text-align: left;
+    padding: 7px;
+}
+.profile-pic:hover .dropdown {
+    display: block;
+    cursor: pointer;
+}
+.profile-pic ul:last-child {
+    float: right;
+    padding: 7px;/* font-style: unset; */
+}
+.profile-pic {
+    text-align: left;
+    float: left;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.profile-pic {
+    display: none;
+}
+#mobile-search-box {
+    height: 100%;
+    position: absolute;
+    font-size: 18px;
+    width: 0;
+    float: right;
+    color: #383838;
+    font-weight: 300;
+    border: none;
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-right: -50%;
+    border-radius: 0px;
+    opacity: 0;
+}
+.txt-box-back {
+    background-image: url(../images/7940.png);
+    top: 10px;
+    position: absolute;
+    display: block;
+    /* background: black; */
+    z-index: 10000000;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    left: 20px;
+    top: 23px;
+    cursor: pointer;
+    display: none;
+}
+.txt-box-clear {
+    cursor: pointer;
+    top: 10px;
+    position: absolute;
+    display: block;
+    /* background: black; */
+    z-index: 10000000;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    right: 20px;
+    top: 23px;
+    display: none;
+    cursor: pointer;
+}
+.search-expand {
+    width: 100%;
+}
+.mobile-search-invoke {
+    background: no-repeat;
+    border: none;
+}
+#mobileheader .mobileheader-v2 {
+    background: #00431b;
+    position: fixed;
+    z-index: 1000;
+    height: 63px;
+    box-shadow: 0px 3px 15px 0px #00000045;
+}
+.mobileheader-v2> form {
+    margin: 0px;
+    padding: 0px;
+}
+.mobileheader-v2 > form > input[type="submit"] {
+    display: none;
+}
+.home-one .banner-form {
+    border-radius: 10px;
+    display: none;
+}
+.phone-slider {
+    opacity: 0.6;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#img-slider {
+    opacity: 0.6;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.img-slider1 {
+    background-image: url(../images/phoneslider/28502-aefcce-o-black-people-shopping-facebook.jpg);
+}
+.img-slider4 {
+    background-image: url(../images/phoneslider/happy-shopper.jpg);
+}
+.img-slider3 {
+    background-image: url(../images/phoneslider/77185-car-sunset-Corvette.jpg);
+}
+.img-slider2 {
+    background-image: url(../images/phoneslider/shopping.jpg);
+}
+.img-slider5 {
+    background-image: url(../images/phoneslider/e-commerce-online-shopping-1260x840.png);
+}
+.search-options-panel {
+    display: flex;
+    padding: 15px;
+    background-color: white;
+    position: absolute;
+    top: 63px;
+    width: 100%;
+    right: 0;
+    left: 0;
+    color: #333;
+    flex-flow: column;
+    box-shadow: 0px 3px 15px 0px #00000045;
+    left: 100%;
+}
+.search-option {
+    display: flex;
+    padding: 15px 0px;
+    align-items: center;
+}
+.search-option > p {
+    display: flex;
+    flex-flow: column;
+    text-transform: capitalize;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.search-option > p >i {
+    color: dimgray;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 200;
+}
+.search-options-panel img {
+    display: flex;
+    /* align-self: auto; */
+    /* padding: 3px; */
+    height: 28px;
+    width: 28px;
+}
+.search-prediction-pc-container {
+    position: absolute;
+    top: 87px;
+    left: 45px;
+    display: flex;
+    max-height: 400px;
+    overflow: scroll;
+    right: 155px;
+    background-color: white;
+    color: #333;
+    flex-flow: column;
+    box-shadow: -3px 20px 15px 0px #00000045;
+    padding: 15px;
+    left: 150%;
+    right: -100%;
+}
+.search-block {
+    position: relative;
+}
+.search-prediction-pc-container1 {
+    position: absolute;
+    left: 0px;
+    display: flex;
+    max-height: 400px;
+    overflow: scroll;
+    right: 0px;
+    background-color: white;
+    color: #333;
+    flex-flow: column;
+    box-shadow: -3px 20px 15px 0px #00000045;
+    padding: 15px;
+    height: 400px;
+    right: 200%;
+    left: -200%;
+}
+.log-out {
+    bottom: 0px;
+    position: absolute;
+}
+#mobilemenu .menu ul>li .arrow {
+    position: absolute;
+    z-index: 1;
+    width: 46px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    padding-left: 8px;
+    display: block;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.logo-side-container {
+    height: 60px;
+    background-color: white;
+    z-index: 1;
+    top: 0;
+    position: absolute;
+    /* width: 50px; */
+    height: 50px;
+    left: 0px;
+    width: 100%;
+    padding: 3px;
+    padding-left: 15px;
+ background-image:url(css/gray bg.jpg);
+    background-position: top;
+    background-image: url(../images/kemio-bg.png);
+    background-size: cover;
+}
+.logo-side-container img {
+    height: 100%;
+}
+.e-logo {
+    height: 100%;
+}
+	.text-black
+	{color: black !important;}
+</style>
+
+<body>
+<!-- header --> 
+<!--		navigation bar -->
+<div class="inline-search-block fixed with-close big" id="toogle-search-bar">
+  <div class="maxwidth-theme" >
+    <div class="col-md-12">
+      <div class="search-wrapper">
+        <div id="title-search">
+          <form action="#" class="search">
+            <div class="search-input-div">
+              <input class="search-input" id="title-search-input" type="text" name="q" value="" placeholder="Search" size="20" maxlength="50" autocomplete="off">
+            </div>
+            <div class="search-button-div">
+              <button class="btn btn-search btn-default bold btn-lg" type="submit" name="s" value="services">Search</button>
+              <span class="close-block inline-search-hide"><span class="svg svg-close close-icons"></span></span> </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="header_wrap visible-lg visible-md title-v3 index">
+  <header id="header">
+    <div class="header-v4 header-wrapper">
+      <div class="logo_and_menu-row container">
+        <div class="logo-row">
+          <div class="maxwidth-theme">
+            <div class="row d-flex justify-content-center justify-content-between">
+              <div class="logo-block col-md-2 col-sm-3 p-0">
+                <div class="logo"> <a href="#"><img src="img/logo/e-pay.svg" alt="e-PayNairobi" class="e-logo" title="HOME"></a> </div>
+              </div>
+              <div class="col-md-3 col-lg-3 search_wrap" style="width: 40%; opacity: 1; visibility: visible;">
+                <div class="search-block inner-table-block">
+                  <div class="search-wrapper">
+                    <div id="title-search_fixed">
+                      <form action="/catalog/" class="search">
+                        <div class="search-input-div">
+                          <input class="search-input" id="title-search-input_fixed" type="text" name="q" value="" placeholder="Search" size="20" maxlength="50" autocomplete="off">
+                        </div>
+                        <div class="search-button-div">
+                          <button class="btn btn-search" type="submit" name="s" value="Поиск"><i class="svg svg-search svg-black"></i></button>
+                          <span class="close-block inline-search-hide"><span class="svg svg-close close-icons"></span></span> </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-icons pull-right float-right ">
+                <div class="pull-right block-link"></div>
+                <span><i class="fa icon-font"></i></span>
+                <div class="pull-right">
+                  <div class="wrap_icon inner-table-block">
+                  <div class="profile-pic">
+                  <img src="../images/Invisible-Man-780294.jpg" height="80px" width="80px"><i class="fa fa-angle-down"></i>
+                  <ul class="dropdown">
+                    <li class="menu_back"> <img src="../images/Invisible-Man-780294.jpg" height="40px" width="40px">
+                      <ul>
+                        <li>email@email.com</li>
+                        <li>Username</li>
+                      </ul>
+                    <li> <a class="dark-color" href="#" title="check out your profile details"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Profile</font></font></span> </a> </li>
+                    <!--my profile links-->
+                    <li> <a class="dark-color" href="#" title="My ads"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">My Ads</font><span class="count-item">0</span></font></span> </a> </li>
+                    <!--my profile links-->
+                    <li> <a class="dark-color" href="#" title="Your Added shops"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">My Shop</font><span class="count-item">0</span></font></span> </a> </li>
+                    <!--my profile links-->
+                    <li> <a class="dark-color" href="#" title="Your Favourite Ads"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Favourite Ads</font><span class="count-item">0</span></font></span> </a> </li>
+                    <!--my profile links-->
+                    <li> <a class="dark-color" href="#" title="Archived Ads"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Archived Ads</font></font></span> </a> </li>
+                    <!--my profile links-->
+                    <li> <a class="dark-color" href="#" title="Pending Approval"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pending Approval</font><span class="count-item">0</span></font></span> </a> </li>
+                    <!--my profile links-->
+                    <li> <a class="dark-color" href="#" title="Close Account"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Close Account</font></font></span> </a> </li>
+                    <!--my profile links-->
+                    <li> <a class="dark-color" href="#" title="Close Account"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Log Out</font></font></span> </a> </li>
+                  </ul>
+                  <ul>
+                    <li>email@email.com</li>
+                    <li>Username</li>
+                    </div>
+                    </div>
+                  </ul>
+                  <div class="wrap_icon inner-table-block">
+                    <div id="bxdynamic_header-auth-block1_start"></div>
+                    <!-- noindex --><a rel="nofollow" title="log in" class="personal-link dark-color animate-load" data-event="jqm" data-param-type="auth" data-param-backurl="/" data-name="auth" href="signin.html"><i class="svg inline big svg-inline-cabinet" aria-hidden="true" title="log in">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"> <
+                      </defs>
+                      <path data-name="Rounded Rectangle 110" class="loccls-1" d="M1433,132h-15a3,3,0,0,1-3-3v-7a3,3,0,0,1,3-3h1v-2a6,6,0,0,1,6-6h1a6,6,0,0,1,6,6v2h1a3,3,0,0,1,3,3v7A3,3,0,0,1,1433,132Zm-3-15a4,4,0,0,0-4-4h-1a4,4,0,0,0-4,4v2h9v-2Zm4,5a1,1,0,0,0-1-1h-15a1,1,0,0,0-1,1v7a1,1,0,0,0,1,1h15a1,1,0,0,0,1-1v-7Zm-8,3.9v1.6a0.5,0.5,0,1,1-1,0v-1.6A1.5,1.5,0,1,1,1426,125.9Z" transform="translate(-1415 -111)"></path>
+                    </svg>
+                    </i><span class="wrap"><span class="name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sign in </font></font></span><span class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">My Account</font></font></span></span></a><!-- /noindex -->
+                    <div id="bxdynamic_header-auth-block1_end" style="display:none"></div>
+                  </div>
+                </div>
+                <div class="pull-right">
+                  <div class="wrap_icon inner-table-block btn-span-margin text-capitalize"> <a href="ad-post.html" ><span id="sell-item">print receipt</span></a> <a href="shop-category.html"><span id="add-shop">create an account</span></a> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-row middle-block bgcolored ">
+        <div class="maxwidth-theme"style="background-color: #00431b;">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="menu-only">
+                  <nav class="mega-menu sliced ovisible initied">
+                    <div class="table-menu">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <td class="menu-item dropdown catalog wide_menu" style="visibility: visible;"><div class="wrap"> <a class="dropdown-toggle" href="/catalog/">
+                                <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Services</font></font>
+                                  <div class="line-wrapper"><span class="line"></span></div>
+                                </div>
+                                </a> <span class="tail"></span>
+                                <ul class="dropdown-menu text-capitalize">
+                                  <li class="dropdown-submenu  has_img">
+                                    <div class="menu_img"><img src="img/new-icons/case.svg" alt="cars & vehcles" title="cars & vehcles"></div>
+                                    <div  title="county parking services" class="service-link-title pb-4"> <span class="name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Single Business Permits</font></font> </span> <span class="arrow"><i></i></span></div>
+                                    <ul class="dropdown-menu toggle_menu text-capitalize">
+                                      <!--									revenue stream service-->
+                                      <li class="menu-item "> <a href="#" title="renew your business permits" style="white-space: normal;" > <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">renew SBP</font> </font> </span> </a> </li>
+                                      <!--									revenue stream service--> 
+                                      <!--									revenue stream service-->
+                                      <li class="menu-item"> <a href="#" title="pay or check for penalties" style="white-space: normal;"> <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">register new business</font> </font> </span> </a> </li>
+                                      <!--									revenue stream service--> 
+                                      
+                                      <!--									revenue stream service-->
+                                      <li class="menu-item"> <a href="#" title="print a permit" style="white-space: normal;"> <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">print permit</font> </font> </span> </a> </li>
+                                      <!--									revenue stream service--> 
+                                      
+                                      <!--									revenue stream service-->
+                                      <li class="menu-item"> <a href="#" title="print receipt for specific permit" style="white-space: normal;"> <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">print receipt</font> </font> </span> </a> </li>
+                                      <!--									revenue stream service-->
+                                    </ul>
+                                  </li>
+                                  <li class="dropdown-submenu  has_img">
+                                    <div class="menu_img"><img src="img/new-icons/house.svg" alt="cars & vehcles" title="services to be paid for your land rates"></div>
+                                    <div  title="county parking services" class="service-link-title pb-4"> <span class="name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">land rates</font></font> </span> <span class="arrow"><i></i></span></div>
+                                    <ul class="dropdown-menu toggle_menu text-capitalize">
+                                      <!--									revenue stream service-->
+                                      <li class="menu-item "> <a href="#" title="pay for your land rates" style="white-space: normal;" > <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">pay land rates</font> </font> </span> </a> </li>
+                                      <!--									revenue stream service--> 
+                                      <!--									revenue stream service-->
+                                      <li class="menu-item"> <a href="#" title="print a transaction's receipt" style="white-space: normal;"> <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">print receipt</font> </font> </span> </a> </li>
+                                      <!--									revenue stream service-->
+                                    </ul>
+                                  </li>
+                                  <li class="dropdown-submenu  has_img">
+                                    <div class="menu_img"><img src="img/new-icons/key.svg" alt="cars & vehcles" title="services to be paid for your land rates"></div>
+                                    <div  title="pay for bills" class="service-link-title pb-4"> <span class="name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">rents</font></font> </span> <span class="arrow"><i></i></span></div>
+                                    <ul class="dropdown-menu toggle_menu text-capitalize">
+                                      <!--									revenue stream service-->
+                                      <li class="menu-item "> <a href="#" title="pay for your house rents" style="white-space: normal;" > <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">house rents</font> </font> </span> </a> </li>
+                                      <!--									revenue stream service--> 
+                                      <!--									revenue stream service-->
+                                      <li class="menu-item"> <a href="#" title="pay for your market stalls rental fees" style="white-space: normal;"> <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">market stalls</font> </font> </span> </a> </li>
+                                      <!--									revenue stream service-->
+                                      <li class="menu-item"> <a href="#" title="search for receipt" style="white-space: normal;"> <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">receipt</font> </font> </span> </a> </li>
+                                      <!--									revenue stream service-->
+                                      
+                                    </ul>
+                                  </li>
+                                  <li class="dropdown-submenu  has_img">
+                                    <div class="menu_img"><img src="img/new-icons/parking.svg" alt="cars & vehcles" title="services to be paid for your land rates"></div>
+                                    <div  title="county rental fees" class="service-link-title pb-4"> <span class="name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">parking fees</font></font> </span> <span class="arrow"><i></i></span></div>
+                                    <ul class="dropdown-menu toggle_menu text-capitalize">
+                                      <!--									revenue stream service-->
+                                      <li class="menu-item "> <a href="#" title="pay for your daily parking fees" style="white-space: normal;" > <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">daily parking</font> </font> </span> </a> </li>
+                                      <!--									revenue stream service--> 
+                                      <!--									revenue stream service-->
+                                      <li class="menu-item"> <a href="#" title="pay parking for a specified period of time" style="white-space: normal;"> <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">seasonal parking</font> </font> </span> </a> </li>
+                                      <!--									revenue stream service-->
+                                      <li class="menu-item"> <a href="#" title="pay monthly parking for your sacco fleet" style="white-space: normal;"> <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">sacco parking</font> </font> </span> </a> </li>
+                                      
+                                      <!--									revenue stream service-->
+                                      <li class="menu-item"> <a href="#" title="offstreet parking fees" style="white-space: normal;"> <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">offstreet parking</font> </font> </span> </a> </li>
+                                      <!--									revenue stream service--> 
+                                      <!--									revenue stream service-->
+                                      <li class="menu-item"> <a href="#" title="pay for parking penalties" style="white-space: normal;"> <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">penalties</font> </font> </span> </a> </li>
+                                      <!--									revenue stream service--> 
+                                      <!--									revenue stream service-->
+                                      <li class="menu-item"> <a href="#" title="phave a look at some of your parking receipts" style="white-space: normal;"> <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">receipts</font> </font> </span> </a> </li>
+                                      <!--									revenue stream service--> 
+                                      <!--									revenue stream service-->
+                                      
+                                    </ul>
+                                  </li>
+                                  <li class="dropdown-submenu  has_img">
+                                    <div class="menu_img"><img src="img/new-icons/receipt.svg" alt="cars & vehcles" title="services to be paid for your land rates"></div>
+                                    <div  title="county parking services" class="service-link-title pb-4"> <span class="name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">county bills</font></font> </span> <span class="arrow"><i></i></span></div>
+                                    <ul class="dropdown-menu toggle_menu text-capitalize">
+                                      <!--									revenue stream service-->
+                                      <li class="menu-item "> <a href="#" title="pay for your land rates" style="white-space: normal;" > <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">pay for a bill</font> </font> </span> </a> </li>
+                                      <!--									revenue stream service--> 
+                                      <!--									revenue stream service-->
+                                      <li class="menu-item"> <a href="#" title="print a transaction's receipt" style="white-space: normal;"> <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">print bill</font> </font> </span> </a> </li>
+                                      <!--									revenue stream service-->
+                                      
+                                    </ul>
+                                  </li>
+                                  <li class="dropdown-submenu  has_img">
+                                    <div class="menu_img"><img src="img/new-icons/brickwall.svg" alt="cars & vehcles" title="services to be paid for your land rates"></div>
+                                    <div  title="county construction permits" class="service-link-title pb-4"> <span class="name"><font style="vertical-align: inherit;" class="text-lowercase"><font style="vertical-align: inherit;">e-Construction</font></font> </span> <span class="arrow"><i></i></span></div>
+                                    <ul class="dropdown-menu toggle_menu text-capitalize">
+                                      <!--									revenue stream service-->
+                                      <li class="menu-item "> <a href="#" title="pay for a construction permit" style="white-space: normal;" > <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">pay permit</font> </font> </span> </a> </li>
+                                      <!--									revenue stream service--> 
+                                      <!--									revenue stream service-->
+                                      <li class="menu-item"> <a href="#" title="print an e-costruction receipt" style="white-space: normal;"> <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">print receipt</font> </font> </span> </a> </li>
+                                      <!--									revenue stream service-->
+                                      
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </div></td>
+                            <td class="menu-item dropdown" style="visibility: visible;"><div class="wrap"> <a class="dropdown-toggle" href="#/">
+                                <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Help </font></font>
+                                  <div class="line-wrapper"><span class="line"></span></div>
+                                </div>
+                                </a> <span class="tail"></span>
+                                <ul class="dropdown-menu text-capitalize">
+                                  <li class="  "> <a href="#" title="FAQs"><span class="name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">FAQs</font></font></span></a> </li>
+                                  <li class="  "> <a href="/help/delivery/" title="Tearms Of Use"><span class="name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">guidlines</font></font></span></a> </li>
+                                </ul>
+                              </div></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="line-row visible-xs"></div>
+    </div>
+  </header>
+</div>
+<div class="jqmOverlay search"></div>
+<div id="headerfixed">
+<div class="maxwidth-theme container">
+<div class="logo-row v2 row margin0 menu-row">
+<div class="inner-table-block nopadding logo-block">
+  <div class="logo"> <a href="index.html"><img src="img/logo/e-pay.svg" alt="NCCG ePay" title="Epayments" height="88px"></a> </div>
+</div>
+<div class="inner-table-block menu-block" style="width: 70%;">
+  <div class="navs table-menu js-nav opacity1" >
+    <nav class="mega-menu sliced ovisible initied">
+      <div class="table-menu">
+        <table>
+          <tbody>
+            <tr>
+              <td class="menu-item dropdown catalog wide_menu" style="visibility: visible;"><div class="wrap"> <a class="dropdown-toggle" href="#">
+                  <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Services</font></font>
+                    <div class="line-wrapper"><span class="line"></span></div>
+                  </div>
+                  </a> <span class="tail"></span>
+                  <ul class="dropdown-menu text-capitalize">
+                    <li class="dropdown-submenu  has_img">
+                      <div class="menu_img"><img src="img/new-icons/case.svg" alt="cars & vehcles" title="cars & vehcles"></div>
+                      <div  title="county parking services" class="service-link-title pb-4"> <span class="name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Single Business Permits</font></font> </span> <span class="arrow"><i></i></span></div>
+                      <ul class="dropdown-menu toggle_menu text-capitalize">
+                        <!--									revenue stream service-->
+                        <li class="menu-item "> <a href="#" title="renew your business permits" style="white-space: normal;" > <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">renew SBP</font> </font> </span> </a> </li>
+                        <!--									revenue stream service--> 
+                        <!--									revenue stream service-->
+                        <li class="menu-item"> <a href="#" title="pay or check for penalties" style="white-space: normal;"> <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">register new business</font> </font> </span> </a> </li>
+                        <!--									revenue stream service--> 
+                        
+                        <!--									revenue stream service-->
+                        <li class="menu-item"> <a href="#" title="print a permit" style="white-space: normal;"> <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">print permit</font> </font> </span> </a> </li>
+                        <!--									revenue stream service--> 
+                        
+                        <!--									revenue stream service-->
+                        <li class="menu-item"> <a href="#" title="print receipt for specific permit" style="white-space: normal;"> <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">print receipt</font> </font> </span> </a> </li>
+                        <!--									revenue stream service-->
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu  has_img">
+                      <div class="menu_img"><img src="img/new-icons/house.svg" alt="cars & vehcles" title="services to be paid for your land rates"></div>
+                      <div  title="county parking services" class="service-link-title pb-4"> <span class="name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">land rates</font></font> </span> <span class="arrow"><i></i></span></div>
+                      <ul class="dropdown-menu toggle_menu text-capitalize">
+                        <!--									revenue stream service-->
+                        <li class="menu-item "> <a href="#" title="pay for your land rates" style="white-space: normal;" > <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">pay land rates</font> </font> </span> </a> </li>
+                        <!--									revenue stream service--> 
+                        <!--									revenue stream service-->
+                        <li class="menu-item"> <a href="#" title="print a transaction's receipt" style="white-space: normal;"> <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">print receipt</font> </font> </span> </a> </li>
+                        <!--									revenue stream service-->
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu  has_img">
+                      <div class="menu_img"><img src="img/new-icons/key.svg" alt="cars & vehcles" title="services to be paid for your land rates"></div>
+                      <div  title="pay for bills" class="service-link-title pb-4"> <span class="name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">rents</font></font> </span> <span class="arrow"><i></i></span></div>
+                      <ul class="dropdown-menu toggle_menu text-capitalize">
+                        <!--									revenue stream service-->
+                        <li class="menu-item "> <a href="#" title="pay for your house rents" style="white-space: normal;" > <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">house rents</font> </font> </span> </a> </li>
+                        <!--									revenue stream service--> 
+                        <!--									revenue stream service-->
+                        <li class="menu-item"> <a href="#" title="pay for your market stalls rental fees" style="white-space: normal;"> <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">market stalls</font> </font> </span> </a> </li>
+                        <!--									revenue stream service-->
+                        <li class="menu-item"> <a href="#" title="search for receipt" style="white-space: normal;"> <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">receipt</font> </font> </span> </a> </li>
+                        <!--									revenue stream service-->
+                        
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu  has_img">
+                      <div class="menu_img"><img src="img/new-icons/parking.svg" alt="cars & vehcles" title="services to be paid for your land rates"></div>
+                      <div  title="county rental fees" class="service-link-title pb-4"> <span class="name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">parking fees</font></font> </span> <span class="arrow"><i></i></span></div>
+                      <ul class="dropdown-menu toggle_menu text-capitalize">
+                        <!--									revenue stream service-->
+                        <li class="menu-item "> <a href="#" title="pay for your daily parking fees" style="white-space: normal;" > <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">daily parking</font> </font> </span> </a> </li>
+                        <!--									revenue stream service--> 
+                        <!--									revenue stream service-->
+                        <li class="menu-item"> <a href="#" title="pay parking for a specified period of time" style="white-space: normal;"> <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">seasonal parking</font> </font> </span> </a> </li>
+                        <!--									revenue stream service-->
+                        <li class="menu-item"> <a href="#" title="pay monthly parking for your sacco fleet" style="white-space: normal;"> <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">sacco parking</font> </font> </span> </a> </li>
+                        
+                        <!--									revenue stream service-->
+                        <li class="menu-item"> <a href="#" title="offstreet parking fees" style="white-space: normal;"> <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">offstreet parking</font> </font> </span> </a> </li>
+                        <!--									revenue stream service--> 
+                        <!--									revenue stream service-->
+                        <li class="menu-item"> <a href="#" title="pay for parking penalties" style="white-space: normal;"> <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">penalties</font> </font> </span> </a> </li>
+                        <!--									revenue stream service--> 
+                        <!--									revenue stream service-->
+                        <li class="menu-item"> <a href="#" title="phave a look at some of your parking receipts" style="white-space: normal;"> <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">receipts</font> </font> </span> </a> </li>
+                        <!--									revenue stream service--> 
+                        <!--									revenue stream service-->
+                        
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu  has_img">
+                      <div class="menu_img"><img src="img/new-icons/receipt.svg" alt="cars & vehcles" title="services to be paid for your land rates"></div>
+                      <div  title="county parking services" class="service-link-title pb-4"> <span class="name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">county bills</font></font> </span> <span class="arrow"><i></i></span></div>
+                      <ul class="dropdown-menu toggle_menu text-capitalize">
+                        <!--									revenue stream service-->
+                        <li class="menu-item "> <a href="#" title="pay for your land rates" style="white-space: normal;" > <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">pay for a bill</font> </font> </span> </a> </li>
+                        <!--									revenue stream service--> 
+                        <!--									revenue stream service-->
+                        <li class="menu-item"> <a href="#" title="print a transaction's receipt" style="white-space: normal;"> <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">print bill</font> </font> </span> </a> </li>
+                        <!--									revenue stream service-->
+                        
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu  has_img">
+                      <div class="menu_img"><img src="img/new-icons/brickwall.svg" alt="cars & vehcles" title="services to be paid for your land rates"></div>
+                      <div  title="county construction permits" class="service-link-title pb-4"> <span class="name"><font style="vertical-align: inherit;" class="text-lowercase"><font style="vertical-align: inherit;">e-Construction</font></font> </span> <span class="arrow"><i></i></span></div>
+                      <ul class="dropdown-menu toggle_menu text-capitalize">
+                        <!--									revenue stream service-->
+                        <li class="menu-item "> <a href="#" title="pay for a construction permit" style="white-space: normal;" > <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">pay permit</font> </font> </span> </a> </li>
+                        <!--									revenue stream service--> 
+                        <!--									revenue stream service-->
+                        <li class="menu-item"> <a href="#" title="print an e-costruction receipt" style="white-space: normal;"> <span class="name pb-1"> <font style="vertical-align: inherit;"> <font style="vertical-align: inherit;">print receipt</font> </font> </span> </a> </li>
+                        <!--									revenue stream service-->
+                        
+                      </ul>
+                    </li>
+                  </ul>
+                </div></td>
+              <td class="menu-item dropdown" style="visibility: visible;"><div class="wrap"> <a class="dropdown-toggle" href="#">
+                  <div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Help</font></font>
+                    <div class="line-wrapper"><span class="line"></span></div>
+                  </div>
+                  </a> <span class="tail"></span>
+                  <ul class="dropdown-menu text-capitalize">
+                    <li class="  "> <a href="#" title="FAQs"><span class="name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">FAQs</font></font></span></a> </li>
+                    <li class="  "> <a href="/help/delivery/" title="Tearms Of Use"><span class="name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">guidlines</font></font></span></a> </li>
+                  </ul>
+                </div></td>
+              <td class="menu-item dropdown js-dropdown nosave" style="display: none; visibility: visible;"><div class="wrap"> <a class="dropdown-toggle more-items" href="#"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Yet</font></font></span> </a> <span class="tail"></span>
+                  <ul class="dropdown-menu">
+                  </ul>
+                </div></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </nav>
+  </div>
+</div>
+<div class="profile-pic">
+<img src="img/bg/nairobibg.jpg" height="80px" width="80px"><i class="fa fa-angle-down"></i>
+<ul class="dropdown">
+  <li class="menu_back"> <img src="img/user/default-user.png" height="40px" width="40px">
+    <ul>
+      <li class="mt-2">email@email.com</li>
+      <li class="text-capitalize">fname lname</li>
+    </ul>
+  <li> <a class="dark-color" href="#" title="check out your profile details"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Profile</font></font></span> </a> </li>
+  <!--my profile links-->
+  <li> <a class="dark-color" href="#" title="My ads"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">My Ads</font><span class="count-item">0</span></font></span> </a> </li>
+  <!--my profile links-->
+  <li> <a class="dark-color" href="#" title="Your Added shops"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">My Shop</font><span class="count-item">0</span></font></span> </a> </li>
+  <!--my profile links-->
+  <li> <a class="dark-color" href="#" title="Your Favourite Ads"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Favourite Ads</font><span class="count-item">0</span></font></span> </a> </li>
+  <!--my profile links-->
+  <li> <a class="dark-color" href="#" title="Archived Ads"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Archived Ads</font></font></span> </a> </li>
+  <!--my profile links-->
+  <li> <a class="dark-color" href="#" title="Pending Approval"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pending Approval</font><span class="count-item">0</span></font></span> </a> </li>
+  <!--my profile links-->
+  <li> <a class="dark-color" href="#" title="Close Account"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Close Account</font></font></span> </a> </li>
+  <!--my profile links-->
+  <li> <a class="dark-color" href="#" title="Close Account"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Log Out</font></font></span> </a> </li>
+</ul>
+<ul>
+<li>email@email.com</li>
+<li>Username</li>
+</div>
+<div class="inner-table-block nopadding small-block">
+  <div class="wrap_icon wrap_cabinet">
+    <div id="bxdynamic_header-auth-block2_start" style="display:none"></div>
+    <!-- noindex --><a rel="nofollow" title="log in" class="personal-link dark-color animate-load" data-event="jqm" data-param-type="auth" data-param-backurl="/" data-name="auth" href="#"><i class="svg inline big svg-inline-cabinet" aria-hidden="true" title="log in">
+    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+      <defs>
+        <style>
+      .loccls-1 {
+        fill: #222;
+        fill-rule: evenodd;
+      }
+    </style>
+      </defs>
+      <path data-name="Rounded Rectangle 110" class="loccls-1" d="M1433,132h-15a3,3,0,0,1-3-3v-7a3,3,0,0,1,3-3h1v-2a6,6,0,0,1,6-6h1a6,6,0,0,1,6,6v2h1a3,3,0,0,1,3,3v7A3,3,0,0,1,1433,132Zm-3-15a4,4,0,0,0-4-4h-1a4,4,0,0,0-4,4v2h9v-2Zm4,5a1,1,0,0,0-1-1h-15a1,1,0,0,0-1,1v7a1,1,0,0,0,1,1h15a1,1,0,0,0,1-1v-7Zm-8,3.9v1.6a0.5,0.5,0,1,1-1,0v-1.6A1.5,1.5,0,1,1,1426,125.9Z" transform="translate(-1415 -111)"></path>
+    </svg>
+    </i></a><!-- /noindex -->
+    <div id="bxdynamic_header-auth-block2_end" style="display:none"></div>
+  </div>
+</div>
+<div class="inner-table-block small-block nopadding inline-search-show" data-type_search="fixed">
+  <div class="search-block top-btn"><i class="svg svg-search lg"></i></div>
+</div>
+</div>
+</div>
+</div>
+<div id="mobileheader" class="visible-xs visible-sm">
+  <div class="mobileheader-v2">
+    <form>
+      <!--			mobile search bar-->
+      <input type="text" placeholder="search" id="mobile-search-box" class="search-expand">
+      <input type="submit">
+      <!--			mobile search bar--> 
+      <!--		mobile search bar quick options -->
+      <div class="search-options-panel"> 
+        <!--				search option item	--> 
+        <span class="search-option"> <img src="images/97d3a6a67f5daf82e471d9a4bc44726b.png" width="30px" height="30px"/>
+        <p class="option-item"><b>Samsung Galaxy S8 </b><i>Phones & Accessories</i></p>
+        </span> 
+        <!--				search option item--> 
+        <!--				search option item	--> 
+        <span class="search-option"> <img src="images/97d3a6a67f5daf82e471d9a4bc44726b.png" width="30px" height="30px"/>
+        <p class="option-item"><b>Nikon D40</b><i>Electronics & Gadgets</i></p>
+        </span> 
+        <!--				search option item--> 
+        <!--				search option item	--> 
+        <span class="search-option"> <img src="images/97d3a6a67f5daf82e471d9a4bc44726b.png" width="30px" height="30px"/>
+        <p class="option-item"><b>Samsung TV 45" </b><i>Electronics & Gadgets</i></p>
+        </span> 
+        <!--				search option item--> 
+        <!--				search option item	--> 
+        <span class="search-option"> <img src="images/97d3a6a67f5daf82e471d9a4bc44726b.png" width="30px" height="30px"/>
+        <p class="option-item"><b>BMW X6</b><i>Cars & Vehcles</i></p>
+        </span> 
+        <!--				search option item--> 
+        <!--				search option item	--> 
+        <span class="search-option"> <img src="images/97d3a6a67f5daf82e471d9a4bc44726b.png" width="30px" height="30px"/>
+        <p class="option-item"><b>Canono T3200</b><i>Electronics & Gadgets</i></p>
+        </span> 
+        <!--				search option item--> 
+      </div>
+      <!--			mobile search bar quick options -->
+    </form>
+    <i class="txt-box-back text-black"><i data-feather="arrow-left" class="text-black"></i></i> <i class="txt-box-clear"><i data-feather="x" class="text-black"></i></i>
+    <div class="burger pull-left"> 
+		<i class="svg inline  svg-inline-burger dark svg-inline-cabinet" aria-hidden="true" data-feather="menu"></i>
+		<i class="svg inline  svg-inline-close dark" aria-hidden="true" data-feather="x">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+        <defs>
+          <style>
+      .cccls-1 {
+        fill: #222;
+        fill-rule: evenodd;
+      }
+    </style>
+        </defs>
+        <path data-name="Rounded Rectangle 114 copy 3" class="cccls-1" d="M334.411,138l6.3,6.3a1,1,0,0,1,0,1.414,0.992,0.992,0,0,1-1.408,0l-6.3-6.306-6.3,6.306a1,1,0,0,1-1.409-1.414l6.3-6.3-6.293-6.3a1,1,0,0,1,1.409-1.414l6.3,6.3,6.3-6.3A1,1,0,0,1,340.7,131.7Z" transform="translate(-325 -130)"></path>
+      </svg>
+      </i> </div>
+    <div class="title-block col-sm-6 col-xs-5 pull-left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nairobi <small>e-Payments</small></font></font></div>
+    <div class="right-icons pull-right">
+      <div class="pull-right">
+        <div class="wrap_icon">
+          <button class="top-btn mobile-search-invoke twosmallfont"> 
+			  <i class="svg inline big text-white" aria-hidden="true" data-feather="search"></i> 
+			</button>
+        </div>
+      </div>
+      <div class="pull-right">
+        <div class="wrap_icon wrap_cabinet">
+          <div id="bxdynamic_header-auth-block3_start" style="display:none"></div>
+          <!-- noindex --><a rel="nofollow" title="log-in" class="personal-link dark-color animate-load" data-event="jqm" data-param-type="auth" data-param-backurl="/" data-name="auth" href="#">
+			<i class="svg inline big white svg-inline-cabinet text-white" aria-hidden="true" title="log-in" data-feather="power"></i>
+			</a><!-- /noindex -->
+          <div id="bxdynamic_header-auth-block3_end" style="display:none"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="mobilemenu" class="leftside">
+    <div class="mobilemenu-v1 scroller">
+      <div class="wrap">
+        <div class="menu top">
+          <ul class="top">
+            <li> <a class="dark-color parent" href="#" title="Catalog"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Catalog</font></font></span> <span class="arrow"><i class="text-black" data-feather="chevron-right"></i></span> </a>
+              <ul class="dropdown">
+                <li class="menu_back"><a href="#" class="dark-color" rel="nofollow"><i class="text-black" data-feather="arrow-left"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Go back</font></font></a></li>
+                <li class="menu_title"><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Catalog</font></font></a></li>
+                <li> <a class="dark-color parent" href="#" title="clothing"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">clothing</font></font></span> <span class="arrow"><i class="text-black" data-feather="chevron-right"></i></span> </a>
+                  <ul class="dropdown">
+                    <li class="menu_back"><a href="#" class="dark-color" rel="nofollow"><i class="text-black" data-feather="arrow-left"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Go back</font></font></a></li>
+                    <li class="menu_title"><a href="#/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">clothing</font></font></a></li>
+                    <li> <a class="dark-color" href="#/len/" title="Linen"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Linen</font></font></span> </a> </li>
+                  </ul>
+                </li>
+                <li> <a class="dark-color" href="#" title="Bedclothes"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bedclothes</font></font></span> </a> </li>
+                <li> <a class="dark-color" href="#" title="Pillows"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pillows</font></font></span> </a> </li>
+                <li> <a class="dark-color" href="#" title="Blankets"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Blankets</font></font></span> </a> </li>
+                <li> <a class="dark-color" href="#" title="Sheets on an elastic band"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sheets on an elastic band</font></font></span> </a> </li>
+                <li> <a class="dark-color" href="#" title="Plaids and bedspreads"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Plaids and bedspreads</font></font></span> </a> </li>
+                <li> <a class="dark-color" href="#" title="Terry ware"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Terry ware</font></font></span> </a> </li>
+              </ul>
+            </li>
+            <li> <a class="dark-color parent" href="#" title="How to buy"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">How to buy</font></font></span> <span class="arrow"><i class="text-black" data-feather="chevron-right"></i></span> </a>
+              <ul class="dropdown">
+                <li class="menu_back"><a href="#" class="dark-color" rel="nofollow"><i class="text-black" data-feather="arrow-left"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Go back</font></font></a></li>
+                <li class="menu_title"><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">How to buy</font></font></a></li>
+                <li> <a class="dark-color" href="#" title="Terms of payment"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Terms of payment</font></font></span> </a> </li>
+                <li> <a class="dark-color" href="#" title="Terms of delivery"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Terms of delivery</font></font></span> </a> </li>
+                <li> <a class="dark-color" href="#" title="Warranty for goods"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Warranty for goods</font></font></span> </a> </li>
+              </ul>
+            </li>
+            <li> <a class="dark-color parent" href="#" title="Company"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Company</font></font></span> <span class="arrow"><i class="text-black" data-feather="chevron-right"></i></span> </a>
+              <ul class="dropdown">
+                <li class="menu_back"><a href="#" class="dark-color" rel="nofollow"><i class="text-black" data-feather="arrow-left"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Go back</font></font></a></li>
+                <li class="menu_title"><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Company</font></font></a></li>
+                <li> <a class="dark-color" href="#" title="news"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">news</font></font></span> </a> </li>
+                <li> <a class="dark-color" href="#" title="Policy"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Policy</font></font></span> </a> </li>
+              </ul>
+            </li>
+            <li> <a class="dark-color" href="#" title="Contacts"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contacts</font></font></span> </a> </li>
+          </ul>
+        </div>
+        <div id="bxdynamic_mobile-auth-block1_start" style="display:none"></div>
+        <!-- noindex -->
+        <div class="menu middle">
+          <ul>
+            <li> <a rel="nofollow" class="dark-color" href="#"> <i class="svg inline  svg-inline-cabinet" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17">
+                <defs>
+                  <style>
+      .loccls-1 {
+        fill: #222;
+        fill-rule: evenodd;
+      }
+    </style>
+                </defs>
+                <path class="loccls-1" d="M14,17H2a2,2,0,0,1-2-2V8A2,2,0,0,1,2,6H3V4A4,4,0,0,1,7,0H9a4,4,0,0,1,4,4V6h1a2,2,0,0,1,2,2v7A2,2,0,0,1,14,17ZM11,4A2,2,0,0,0,9,2H7A2,2,0,0,0,5,4V6h6V4Zm3,4H2v7H14V8ZM8,9a1,1,0,0,1,1,1v2a1,1,0,0,1-2,0V10A1,1,0,0,1,8,9Z"></path>
+              </svg>
+              </i> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Personal Area</font></font></span> </a> </li>
+          </ul>
+        </div>
+        <!-- /noindex -->
+        <div id="bxdynamic_mobile-auth-block1_end" style="display:none"></div>
+        <div id="bxdynamic_mobile-basket-with-compare-block1_start" style="display:none"></div>
+        <!-- noindex -->
+        <div class="menu middle">
+          <ul>
+            <li class="counters"> <a rel="nofollow" class="dark-color basket-link basket ready " href="#"> <i class="svg svg-basket"></i> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Shopping Cart </font></font><span class="count empted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></span></span> </a> </li>
+            <li class="counters"> <a rel="nofollow" class="dark-color basket-link delay ready " href="#"> <i class="svg svg-wish"></i> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Delayed </font></font><span class="count empted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></span></span> </a> </li>
+          </ul>
+        </div>
+        <div class="menu middle">
+          <ul>
+            <li class="counters"> <a rel="nofollow" class="dark-color basket-link compare ready " href="#"> <i class="svg svg-compare"></i> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Compare Products </font></font><span class="count empted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></span></span> </a> </li>
+          </ul>
+        </div>
+        <!-- /noindex -->
+        <div id="bxdynamic_mobile-basket-with-compare-block1_end" style="display:none"></div>
+        
+        <!-- noindex -->
+        <div class="menu middle">
+          <ul>
+            <li> <a rel="nofollow" href="tel:88007772073" class="dark-color parent"> <i class="svg svg-phone"></i> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8-800-777-20-73</font></font></span> <span class="arrow"><i class="text-black" data-feather="chevron-right"></i></span> </a>
+              <ul class="dropdown">
+                <li class="menu_back"><a href="#" class="dark-color" rel="nofollow"><i class="text-black" data-feather="arrow-left"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Go back</font></font></a></li>
+                <li class="menu_title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Phones</font></font></li>
+                <li><a rel="nofollow" href="tel:88007772073" class="dark-color"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8-800-777-20-73</font></font></a></li>
+                <li><a rel="nofollow" href="tel:+74932345305" class="dark-color"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">+ 7-4932-345-305</font></font></a></li>
+                <li><a rel="nofollow" class="dark-color" href="#" data-event="jqm" data-param-form_id="CALLBACK" data-name="callback"></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- /noindex -->
+        
+        <div class="contacts">
+          <div class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contact Information</font></font></div>
+          <div class="address"> <i class="svg inline  svg-inline-address" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16" viewBox="0 0 13 16">
+              <defs>
+                <style>
+      .acls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+              </defs>
+              <path data-name="Ellipse 74 copy" class="acls-1" d="M763.9,42.916h0.03L759,49h-1l-4.933-6.084h0.03a6.262,6.262,0,0,1-1.1-3.541,6.5,6.5,0,0,1,13,0A6.262,6.262,0,0,1,763.9,42.916ZM758.5,35a4.5,4.5,0,0,0-3.741,7h-0.012l3.542,4.447h0.422L762.289,42H762.24A4.5,4.5,0,0,0,758.5,35Zm0,6a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,758.5,41Z" transform="translate(-752 -33)"></path>
+            </svg>
+            </i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Ivanovo, ul, Sosnovaya, d. 1. </font></font><br>
+          </div>
+          <div class="email"> <i class="svg inline  svg-inline-email" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 13">
+              <defs>
+                <style>
+      .ecls-1 {
+        fill: #222;
+        fill-rule: evenodd;
+      }
+    </style>
+              </defs>
+              <path class="ecls-1" d="M14,13H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0H14a2,2,0,0,1,2,2v9A2,2,0,0,1,14,13ZM3.534,2L8.015,6.482,12.5,2H3.534ZM14,3.5L8.827,8.671a1.047,1.047,0,0,1-.812.3,1.047,1.047,0,0,1-.811-0.3L2,3.467V11H14V3.5Z"></path>
+            </svg>
+            </i> <a href="mailto:sale@tp-iv.ru"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">sale@tp-iv.ru</font></font></a> </div>
+        </div>
+        <div class="social-icons"> 
+          <!-- noindex -->
+          <ul>
+          </ul>
+          <!-- /noindex --> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="mobilemenu-overlay"></div>
+  <div id="mobilemenu-overlay"></div>
+</div>
+<div id="mobilemenu" class="leftside">
+  <div class="mobilemenu-v1 scroller">
+    <div class="wrap">
+      <div class="prof-container">
+        <div class="prof-bg-img"> <img src="img/bg/nairobibg.jpg"/> </div>
+        <div class="user-dp"><img src="img/user/default-user.png"></div>
+        <p class="mt-2">User Name</p>
+        <p class="email-address">Useremail@email.com</p>
+        <p class="log-out" title="logout"><i class="icon-off"><i data-feather="power"></i></i></p>
+      </div>
+      <div class="menu top">
+        <ul class="top text-capitalize">
+			<li> 
+            <!--my profile--> 
+            <a class="dark-color parent" title="How to buy"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">my account</font></font></span> <span class="arrow"><i class="text-black" data-feather="chevron-right"></i></span> </a>
+            <ul class="dropdown"> <li class="menu_back"><a  class="dark-color  d-flex align-items-center" rel="nofollow"><i class="text-black" data-feather="arrow-left"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Go back</font></font></a></li>
+              <li class="menu_title"><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">My Account</font></font></a></li>
+              <!--my profile links-->
+              <li> <a class="dark-color" href="#" title="check out your profile details"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">my profile</font></font></span> </a> </li>
+              <!--my profile links-->
+              <li> <a class="dark-color" href="#" title="My ads"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">transactions history</font><span class="count-item d-none">0</span></font></span> </a> </li>
+              <!--my profile links-->
+              <li> <a class="dark-color" href="#" title="Your registered assets"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">My assets</font><span class="count-item">0</span></font></span> </a> </li>
+              <!--my profile links-->
+              <li> <a class="dark-color" href="#" title="your created bills"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">my bills</font><span class="count-item">0</span></font></span> </a> </li>
+              <!--my profile links-->
+              <li> <a class="dark-color" href="#" title="change your account's password"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">change password</font></font></span> </a> </li>
+              <!--my profile links-->
+              <li> <a class="dark-color" href="#" title="log out my account"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">log out</font><span class="count-item d-none">0</span></font></span> </a> </li>
+              
+            </ul>
+          </li>
+          <li class="selected"> <a class="dark-color parent"  title="Catalog"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">single business permit</font></font></span> <span class="arrow"><i class="text-black" data-feather="chevron-right"></i></span> </a>
+            <ul class="dropdown"> <li class="menu_back"><a  class="dark-color  d-flex align-items-center" rel="nofollow"><i class="text-black" data-feather="arrow-left"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Go back</font></font></a></li>
+              <li class="menu_title"><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">single business permit</font></font></a></li>
+              <li> <a class="dark-color" href="#" title="renew permit for an existing business"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">renew permit</font></font></span></a> </li>
+              <!--category-->
+              <li> <a class="dark-color" href="#" title="register a new business"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">register new business</font></font></span></a> </li>
+              <!--category-->              
+            </ul>
+          </li>
+          <li> <a class="dark-color parent" title="How to buy"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">land rates</font></font></span> <span class="arrow"><i class="text-black" data-feather="chevron-right"></i></span> </a>
+            <ul class="dropdown"> <li class="menu_back"><a  class="dark-color  d-flex align-items-center" rel="nofollow"><i class="text-black" data-feather="arrow-left"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Go back</font></font></a></li>
+<!--				land rate sub menu-->
+              <li class="menu_title"><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">land rates</font></font></a></li>
+<!--				land rate sub menu-->
+              <li> <a class="dark-color" href="#" title="pay for your land rates"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">pay land rate</font></font></span> </a> </li>
+				<!--				land rate sub menu-->
+              <li> <a class="dark-color" href="#" title="print a land rate receipt"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">print land rate</font></font></span> </a> </li>
+				<!--				land rate sub menu-->
+            </ul>
+          </li>
+			
+			<li> <a class="dark-color parent" title="county rental fees"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">rents</font></font></span> <span class="arrow"><i class="text-black" data-feather="chevron-right"></i></span> </a>
+            <ul class="dropdown"> <li class="menu_back"><a  class="dark-color  d-flex align-items-center" rel="nofollow"><i class="text-black" data-feather="arrow-left"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Go back</font></font></a></li>
+<!--				rents ssub menu-->
+              <li class="menu_title"><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">rents</font></font></a></li>
+				
+				
+				<!--				rents ssub menu-->
+              <li> <a class="dark-color" href="#" title="pay for house rents"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">house rents</font></font></span> </a> </li>
+				<!--				rents ssub menu-->
+              <li> <a class="dark-color" href="#" title="pay for stall rents"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">stall rents</font></font></span> </a> </li>
+				<!--				rents ssub menu-->
+              <li> <a class="dark-color" href="#" title="print a receipt"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">receipts</font></font></span> </a> </li>
+				
+            </ul>
+          </li>
+			
+			
+          <li> <a class="dark-color parent" title="Company"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">parking</font></font></span> <span class="arrow"><i class="text-black" data-feather="chevron-right"></i></span> </a>
+            <ul class="dropdown"> <li class="menu_back"><a  class="dark-color  d-flex align-items-center" rel="nofollow"><i class="text-black" data-feather="arrow-left"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Go back</font></font></a></li>
+<!--				rents ssub menu-->
+              <li class="menu_title"><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">parking</font></font></a></li>
+				<!--				rents ssub menu-->
+              <li> <a class="dark-color" href="#" title="pay for your daily parking"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">daily parking</font></font></span> </a> </li>
+				<!--				rents ssub menu-->
+              <li> <a class="dark-color" href="#" title="parking fee for specified period of time"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">seasonal parking</font></font></span> </a> </li>
+				
+				<!--				rents ssub menu-->
+              <li> <a class="dark-color" href="#" title="parking for a fleet of cars"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">sacco parking</font></font></span> </a> </li>
+				
+				<!--				rents ssub menu-->
+              <li> <a class="dark-color" href="#" title="offstreet parking"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">offstreet parking</font></font></span> </a> </li>
+				
+				<!--				rents ssub menu-->
+              <li> <a class="dark-color" href="#" title="parking penalties"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">penalties</font></font></span> </a> </li>
+				
+				<!--				rents ssub menu-->
+              <li> <a class="dark-color" href="#" title="transactions receipts"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">parking receipts</font></font></span> </a> </li>
+            </ul>
+          </li>
+			
+			
+			<li> <a class="dark-color parent" title="county bills"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">county bills</font></font></span> <span class="arrow"><i class="text-black" data-feather="chevron-right"></i></span> </a>
+            <ul class="dropdown"> <li class="menu_back"><a  class="dark-color  d-flex align-items-center" rel="nofollow"><i class="text-black" data-feather="arrow-left"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Go back</font></font></a></li>
+<!--				bills ssub menu-->
+              <li class="menu_title"><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">county bills</font></font></a></li>
+				
+				
+				<!--				bills ssub menu-->
+              <li> <a class="dark-color" href="#" title="pay for an already created county bill"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">pay for a bill</font></font></span> </a> </li>
+				<!--				bills  ssub menu-->
+              <li> <a class="dark-color" href="#" title="print a bill"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">print a bill</font></font></span> </a> </li>
+				<!--				bills ssub menu-->
+              
+				
+            </ul>
+          </li>
+			
+			<li> <a class="dark-color parent" title="construction permits"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">e-Construction</font></font></span> <span class="arrow"><i class="text-black" data-feather="chevron-right"></i></span> </a>
+            <ul class="dropdown"> <li class="menu_back"><a  class="dark-color  d-flex align-items-center" rel="nofollow"><i class="text-black" data-feather="arrow-left"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Go back</font></font></a></li>
+<!--				bills ssub menu-->
+              <li class="menu_title"><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">e-Construction</font></font></a></li>
+				
+				
+				<!--				bills ssub menu-->
+              <li> <a class="dark-color" href="#" title="pay for permit"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">pay for permit</font></font></span> </a> </li>
+				<!--				bills  ssub menu-->
+              <li> <a class="dark-color" href="#" title="print transactions document"> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">print permit</font></font></span> </a> </li>
+				<!--				bills ssub menu-->
+              
+				
+            </ul>
+          </li>
+			
+			 
+			
+			
+          
+        </ul>
+        <!--my profile--> 
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div id="mobilemenu-overlay"></div>
+<!--		navigation bar --> 
+<!-- header -->
+<section id="sectionn"> </section>
+	
+	<script src="https://unpkg.com/feather-icons"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+<script type="text/javascript" src="js/nav.js"></script>
+	<script>
+  feather.replace()
+</script>
+</body>
+</html>

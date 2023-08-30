@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- META SECTION -->
+        <title>Joli Admin - Responsive Bootstrap Admin Template</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <!-- END META SECTION -->
+
+        <!-- CSS INCLUDE -->
+        <link rel="stylesheet" type="text/css" id="theme" href="css/theme-default.css" />
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+        <link rel="stylesheet" href="css/form.css">
+        <!-- EOF CSS INCLUDE -->
+    </head>
+    <header>
+        <div class="nav-holder"></div>
+
+        <nav class="navbar-expand main-navigation">
+            <ul class="navbar-nav">
+                <li class="nav-item toogle-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGEAAAA1CAQAAAD7EE3JAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfjAx0ANwlQDC6OAAABCklEQVRo3u2YPQ6CQBQGB2LhDbyAsZGTYDyFWuj1jEex0HABTwCFyVqIpbD+hPcteUO7ITtkl+RNBsCcFVNSo+FEFQDYUBOSfGo2gYwFZybWH/Rr7ixzyoQFYEKZW+/hd9I/SEXOlT2N9U6+pOEQLhkAc9bMrPfzMTeOr59q0gRGcJ1dQQFXUMAVFHAFBVxBAVdQYAQKffOacp5pOFH1LVLPM22EeU8KU/WdZdddSCHPjCXCvCeNg1R0L9jKX+dd93UG7TzjEUYIV1DAFRRwBQVcQQFXUMAVFPjfSDN864gqGPHYtI7eghGP3YjaUzDisWsd4y8Y8VgepOL3lzyxaR1RBSOe4VtHWzAe1BymrNoaXZcAAAAASUVORK5CYII=" style=" width: 100%; height: 100%;"></image>
+				</svg>
+                </li>
+                <li class="nav-item logo"><a class="nav-link" href="index.html"><img src="img/logo/youtube-logo-png-transparent-image-5.png"></a></li>
+            </ul>
+            <span class="user-details">
+				<img class="icon" src="img/icons/notification.png">
+				<img class="dp" src="img/user/da1c015b357a03bc2468186e54c79795.jpg">
+				<ul class="navbar-nav name-discount">
+					<li class="name">Fname Lname</li>
+					<li class="discount">online</li>
+				</ul>
+
+<!--				toggle menu-->
+				<div class="toogle-user-container drop-shadow">
+					<div class="arrow-container">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  width="25px" height="20px">
+							<path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M12.000,0.000 L-0.000,20.000 L25.000,20.000 L12.000,0.000 Z"/>
+							</svg>
+					</div>
+					<ul class="toogle-user">
+
+					<li><a href="history.html">transaction history</a></li>
+					<li>update profile</li>
+					<li>invite friend</li>
+					<li>logout</li>
+				</ul>
+				</div>
+<!--				toggle menu-->
+			</span>
+        </nav>
+
+        <div class="toogle-menu-container hide">
+
+            <div class="menu-items">
+                <nav class="navbar-expand">
+                    <ul class="navbar-nav">
+                        <li class="nav-item toogle-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGEAAAA1CAQAAAD7EE3JAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfjAx0ANwlQDC6OAAABCklEQVRo3u2YPQ6CQBQGB2LhDbyAsZGTYDyFWuj1jEex0HABTwCFyVqIpbD+hPcteUO7ITtkl+RNBsCcFVNSo+FEFQDYUBOSfGo2gYwFZybWH/Rr7ixzyoQFYEKZW+/hd9I/SEXOlT2N9U6+pOEQLhkAc9bMrPfzMTeOr59q0gRGcJ1dQQFXUMAVFHAFBVxBAVdQYAQKffOacp5pOFH1LVLPM22EeU8KU/WdZdddSCHPjCXCvCeNg1R0L9jKX+dd93UG7TzjEUYIV1DAFRRwBQVcQQFXUMAVFPjfSDN864gqGPHYtI7eghGP3YjaUzDisWsd4y8Y8VgepOL3lzyxaR1RBSOe4VtHWzAe1BymrNoaXZcAAAAASUVORK5CYII=" style=" width: 100%; height: 100%;"></image>
+						</svg>
+                        </li>
+                        <li class="nav-item logo"><a class="nav-link"><img src="img/logo/youtube-logo-png-transparent-image-5.png"></a></li>
+                    </ul>
+                </nav>
+                <ul class="navbar-nav links-container">
+                    <li><a class="nav-link" href="index.html"><img src="img/icons/simple-house-thin (1).png">Home</a></li>
+
+                    <li><a class="nav-link toggle"><img src="img/icons/parking.png">Parking Fee</a>
+                        <!-- Dropdown -->
+                        <ul class="sub-menu ml-4">
+                            <li class="py-2"><a href="daily parking.html">Daily Parking</a></li>
+                            <li class="py-2"><a href="seasonal parking form.html">Seasonal Parking</a></li>
+                            <li class="py-2"><a href="parking penalties.html">Penalties</a></li>
+                            <li class="py-2"><a href="parking.html">Sacco Parking</a></li>
+                            <li class="py-2"><a href="">Offstreet Parking</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a class="nav-link toggle"><img src="img/icons/house rent.png">Rent</a>
+                        <!-- Dropdown -->
+                        <ul class="sub-menu ml-4">
+                            <li class="py-2"><a href="house rent form.html">House Rent</a></li>
+                            <li class="py-2"><a href="market stalls rent.html">Market/Stalls Rent</a></li>
+                            <li class="py-2"><a href="print stall receipt.html">House and Stalls Receipt</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a class="nav-link" href="land-rates.html"><img src="img/icons/land rate.png">Land Rate Payment</a>
+                        <!-- Dropdown -->
+                        <ul class="sub-menu ml-4">
+                            <li class="py-2"><a href="land-rates.html">Pay</a></li>
+                            <li class="py-2"><a href="land-rate-receipt.html">Receipt</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a class="nav-link" href="single-business-permit.html"><img src="img/icons/briefcase.png">Single Business Permit</a></li>
+
+                    <li><a class="nav-link toggle"><img src="img/icons/land rate.png">Unified Business Permit</a>
+                        <!-- Dropdown -->
+                        <ul class="sub-menu ml-4">
+                            <li class="py-2"><a href="renew UBP.html">Renew</a></li>
+                            <li class="py-2"><a href="register-business.html">Register</a></li>
+                            <li class="py-2"><a href="UBP receipt.html">Receipt</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a class="nav-link toggle"><img src="img/icons/land rate.png">Miscellaneous</a>
+                        <!-- Dropdown -->
+                        <ul class="sub-menu ml-4">
+                            <li class="py-2"><a href="miss bill.html">Pay</a></li>
+                            <li class="py-2"><a href="misc receipt.html">Receipt</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a class="nav-link toggle"><img src="img/icons/land rate.png">e-Construction</a>
+                        <!-- Dropdown -->
+                        <ul class="sub-menu ml-4">
+                            <li class="py-2"><a href="construction permit.html">Pay</a></li>
+                            <li class="py-2"><a href="e-construction invoice.html">Receipt</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+    <body>
+        <!-- Terms and Conditions Modal -->
+        <div class="modal fade mt-5" tabindex="-1" role="dialog" id="myModal">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Terms and Conditions</h5>
+                    </div>
+                    <div class="modal-body">
+                        <ol>
+                            <li>A separate application form must be completed in respect of each separate business establishment.
+                            </li>
+                            <li>The permit is issued under County Government act No. 17 of 2012 laws of Kenya.
+                            </li>
+                            <li>Any offence under this act shall be dealt with in accordance with any written laws/act of this County and all the relevant county rules/regulations.
+                            </li>
+                            <li>A permit is a County property./regulations or any written law of the county is contravened.
+                            </li>
+                            <li>Renewal of this permit shall be done on expiry date.
+                            </li>
+                            <li>The owner of the business should notify this office once he/she closes the business.
+                            </li>
+                            <li>The advertisement signage included in the unified permit is 600mm x 300mm or less in size, any signage above this size should be paid separately. Please contact urban planning department.
+                            </li>
+                            <li>All Unified Business Permits applied and paid remain provisional until they are inspected by sub/ward licensing officers for approval by the County. Undercharges if any shall be adjusted through Demand notice to the client.
+                            </li>
+                            <li>Granting this permit does not exempt the business identified above from complying with the current regulations on fire and safety as established by the Government of Kenya and Nairobi City County
+                            </li>
+                            <br>
+                            <h5>MUST READ FIRE AND SAFETY REQUIREMENTS
+                            </h5>
+                            <li>Granting this permit does not exempt the business identified above from complying with the current regulations on health and safety as established by the Government of Kenya and Nairobi City County
+                            </li>
+                            <br>
+                            <h5>MUST READ HEALTH REQUIREMENTS
+                            </h5>
+                            <li>It is a legal requirement that the Trade License be displayed in a conspicuous place. Licensee who fails to display the permit shall be guilty of an offense and liable to a fine not exceeding five hundred shillings.</li>
+                        </ol>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-green" data-dismiss="modal">Accept</button>
+                        <button type="button" class="btn btn-yellow"><a href="#">Decline</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End -->
+        <!-- PAGE CONTENT WRAPPER -->
+        <div class="container-fluid elements-container ">
+
+            <div class="row the-form">
+                <div class="form-items-container">
+
+                    <div class="col-lg-5 col-md-4 title-panel"></div>
+
+                    <div class="col-lg-7 col-md-8 col-12 p-5">
+
+                        <!-- START WIZARD WITH VALIDATION -->
+                        <h3 class="m-portlet__head-text">Single Business Permit registration</h3>
+                        <form action="javascript:alert('Validated!');" role="form" class="form-horizontal" id="wizard-validation">
+                            <div class="wizard show-submit wizard-validation">
+                                <ul>
+                                    <li>
+                                        <a href="#step-1">
+                                                <span class="stepNumber">1</span>
+                                                <span class="stepDesc">Step<br /><small>1</small></span>
+                                            </a>
+                                    </li>
+                                    <li>
+                                        <a href="#step-2">
+                                                <span class="stepNumber">2</span>
+                                                <span class="stepDesc">Step<br /><small>2</small></span>
+                                            </a>
+                                    </li>
+                                    <li>
+                                        <a href="#step-3">
+                                                <span class="stepNumber">3</span>
+                                                <span class="stepDesc">Step<br /><small>3</small></span>
+                                            </a>
+                                    </li>
+                                    <li>
+                                        <a href="#step-4">
+                                                <span class="stepNumber">4</span>
+                                                <span class="stepDesc">Step<br /><small>4</small></span>
+                                            </a>
+                                    </li>
+                                </ul>
+
+                                <div id="step-1">
+                                    <div class="form-group m-form__group">
+                                        <label class="control-label">Business Name</label>
+                                        <input type="text" class="form-control" name="business-name" placeholder="Business Name" pattern="[A-Za-z]{,3}" />
+                                    </div>
+                                    <div class="row no-gutters">
+                                        <div class="form-group m-form__group col-md">
+                                            <label>ID document type</label>
+                                            <select class="form-control m-input m-input--solid">
+                          												<option>
+                          													1
+                          												</option>
+                          												<option>
+                          													2
+                          												</option>
+                          												<option>
+                          													3
+                          												</option>
+                          												<option>
+                          													4
+                          												</option>
+                          												<option>
+                          													5
+                          												</option>
+                          											</select>
+                                        </div>
+                                        <div class="form-group m-form__group col-md ml-md-3 ml-auto">
+                                            <label>ID document number</label>
+                                            <input type="text" class="form-control m-input m-input--solid" name="id-number" placeholder="ID document type" pattern="[0-9]{,5}">
+                                        </div>
+                                    </div>
+                                    <div class="row no-gutters">
+                                        <div class="form-group m-form__group col-md">
+                                            <label>KRA pin</label>
+                                            <input type="text" class="form-control m-input m-input--solid" name="kra-pin" placeholder="Enter KRA pin" pattern="[A-Za-z]{,3}">
+                                        </div>
+                                        <div class="form-group m-form__group col-md ml-md-3 ml-auto">
+                                            <label>VAT number</label>
+                                            <input type="text" class="form-control m-input m-input--solid" name="vat-number" placeholder="VAT number">
+                                        </div>
+                                    </div>
+                                    <div class="row no-gutters">
+                                        <div class="form-group m-form__group col-md">
+                                            <label>PO BOX</label>
+                                            <input type="text" class="form-control m-input m-input--solid" name="po-box" placeholder="PO BOX">
+                                        </div>
+                                        <div class="form-group m-form__group col-md ml-md-3 ml-auto">
+                                            <label>Postal Code</label>
+                                            <input type="text" class="form-control m-input m-input--solid" name="postal-code" placeholder="Postal code">
+                                        </div>
+                                        <div class="form-group m-form__group col-md ml-md-3 ml-auto">
+                                            <label>Town</label>
+                                            <input type="text" class="form-control m-input m-input--solid" name="town" placeholder="Enter town">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="step-2">
+                                    <div class="row no-gutters">
+                                        <div class="form-group m-form__group col-md">
+                                            <label>Telephone Number</label>
+                                            <input type="text" class="form-control m-input m-input--solid" name="first-telephone-number" placeholder="Enter Telephone Number" />
+                                        </div>
+                                        <div class="form-group m-form__group col-md ml-md-3 ml-auto">
+                                            <label>Other Telephone Number</label>
+                                            <input type="text" class="form-control m-input m-input--solid" name="other-telephone-number" placeholder="Enter Other Telephone Number" />
+                                        </div>
+                                    </div>
+                                    <div class="row no-gutters">
+                                        <div class="form-group m-form__group col-md">
+                                            <label>Email Address</label>
+                                            <input type="email" class="form-control m-input m-input--solid" name="email-address" placeholder="Enter Email Address" />
+                                        </div>
+                                        <div class="form-group m-form__group col-md ml-md-3 ml-auto">
+                                            <label>FAX</label>
+                                            <input type="text" class="form-control m-input m-input--solid" name="fax" placeholder="Enter FAX" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group m-form__group">
+                                        <label>Building Name</label>
+                                        <input type="text" class="form-control m-input m-input--solid" name="building-name" placeholder="Enter Building Name" />
+                                    </div>
+                                    <div class="row no-gutters">
+                                        <div class="form-group m-form__group col-md">
+                                            <label>Plot Number</label>
+                                            <input type="text" class="form-control m-input m-input--solid" name="plot-number" placeholder="Enter Plot Number" />
+                                        </div>
+                                        <div class="form-group m-form__group col-md ml-md-3 ml-auto">
+                                            <label>Building Type</label>
+                                            <select class="form-control m-input m-input--solid">
+                                        <option>
+                                          Storey
+                                        </option>
+                                        <option>
+                                          Non story
+                                        </option>
+                                      </select>
+                                        </div>
+                                    </div>
+                                    <div class="row no-gutters">
+                                        <div class="form-group m-form__group col-md">
+                                            <label>Stall/Room Number</label>
+                                            <input type="text" class="form-control m-input m-input--solid" name="stall-number" placeholder="Enter Stall/Room Number" />
+                                        </div>
+                                        <div class="form-group m-form__group col-md ml-md-3 ml-auto">
+                                            <label>Floor</label>
+                                            <input type="text" class="form-control m-input m-input--solid" name="floor" placeholder="Enter Floor" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="step-3">
+
+                                    <div class="form-group m-form__group">
+                                        <label>
+                                               Full Names
+                                            </label>
+                                        <input type="text" class="form-control m-input m-input--solid" name="full-names" placeholder="Enter Full Names" />
+                                    </div>
+                                    <div class="row no-gutters">
+                                        <div class="form-group m-form__group col-md">
+                                            <label>PO BOX</label>
+                                            <input type="text" class="form-control m-input m-input--solid" name="po-box" placeholder="PO BOX">
+                                        </div>
+                                        <div class="form-group m-form__group col-md ml-md-3 ml-auto">
+                                            <label>Postal Code</label>
+                                            <input type="text" class="form-control m-input m-input--solid" name="postal-code" placeholder="Postal code">
+                                        </div>
+                                    </div>
+                                    <div class="row no-gutters">
+                                        <div class="form-group m-form__group col-md align-self-end">
+                                            <label>
+                                              Telephone Number
+                                            </label>
+                                            <input type="text" class="form-control m-input m-input--solid" name="first-telephone-number" placeholder="Enter Telephone Number" />
+                                        </div>
+                                        <div class="form-group m-form__group col-md ml-md-3 ml-auto">
+                                            <label>
+                                              Alternative Telephone Number
+                                            </label>
+                                            <input type="text" class="form-control m-input m-input--solid" name="alt-telephone-number" placeholder="Enter Alternative Telephone Number" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group m-form__group">
+                                        <label>FAX</label>
+                                        <input type="text" class="form-control m-input m-input--solid" name="fax" placeholder="Enter FAX" />
+                                    </div>
+                                </div>
+                                <div id="step-4">
+                                    <div class="form-group m-form__group">
+                                        <label>Activity description</label>
+                                        <textarea type="text" class="form-control m-input m-input--solid" aria-describedby="emailHelp" placeholder=""></textarea>
+                                    </div>
+                                    <div class="form-group m-form__group">
+                                        <label>Other Details</label>
+                                        <input type="text" class="form-control m-input m-input--solid" aria-describedby="emailHelp" placeholder="Other Details">
+                                    </div>
+                                    <div class="row no-gutters">
+                                        <div class="form-group m-form__group col-md"> <label>Area M<sup>2</sup></label>
+                                            <input type="number" class="form-control m-input m-input--solid" aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="form-group m-form__group col-md ml-md-3 ml-auto">
+                                            <label>Number Of employees</label>
+                                            <input type="text" class="form-control m-input m-input--solid" aria-describedby="emailHelp" placeholder="Total Number Of employees">
+                                        </div>
+                                    </div>
+                                    <div class="row no-gutters">
+                                        <div class="form-group m-form__group col-md">
+                                            <label>Sub County</label>
+                                            <select class="form-control m-input m-input--solid">
+                                                <option>
+                                                  starehe
+                                                </option>
+                                                <option>
+                                                  umoja
+                                                </option>
+                                                <option>
+                                                  starehe
+                                                </option>
+                                                <option>
+                                                  umoja
+                                                </option>
+                                              </select>
+                                        </div>
+                                        <div class="form-group m-form__group col-md ml-md-3 ml-auto">
+
+                                            <label>Ward</label>
+                                            <select class="form-control m-input m-input--solid">
+                                                <option>
+                                                  starehe
+                                                </option>
+                                                <option>
+                                                  umoja
+                                                </option>
+                                                <option>
+                                                  starehe
+                                                </option>
+                                                <option>
+                                                  umoja
+                                                </option>
+                                              </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="row no-gutters">
+                                        <div class="form-group m-form__group col-md">
+                                            <label>Major Categories</label>
+                                            <select class="form-control m-input m-input--solid">
+                                                <option>
+                                                  category 1
+                                                </option>
+                                                <option>
+                                                  category 2
+                                                </option>
+                                                <option>
+                                                  category 3
+                                                </option>
+                                                <option>
+                                                  category 4
+                                                </option>
+                                              </select>
+                                        </div>
+                                        <div class="form-group m-form__group col-md ml-md-3 ml-auto">
+                                            <label>Sub Category</label>
+                                            <select class="form-control m-input m-input--solid">
+                                                <option>
+                                                  category 1
+                                                </option>
+                                                <option>
+                                                  category 2
+                                                </option>
+                                                <option>
+                                                  category 3
+                                                </option>
+                                                <option>
+                                                  category 4
+                                                </option>
+                                              </select>
+                                        </div>
+
+                                        <div class="form-group m-form__group col-md ml-md-3 ml-auto">
+                                            <label>Relative Size</label>
+                                            <select class="form-control m-input m-input--solid">
+                                                <option>
+                                                  small
+                                                </option>
+                                                <option>
+                                                  medium
+                                                </option>
+                                                <option>
+                                                  large
+                                                </option>
+                                              </select>
+                                        </div>
+                                    </div>
+
+                                    <ul class="bill-bill">
+                                        <li><b>Billed Items</b></li>
+                                        <li><span>Trade License</span><span>25000</span></li>
+                                        <li><span>Fire Permit License</span><span>25000</span></li>
+                                        <li><span>Health Certificate</span><span>25000</span></li>
+                                        <li><span>Food Hygiene Certificate</span><span>25000</span></li>
+                                        <li><span>Food Hygiene Certificate</span><span>25000</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- END WIZARD WITH VALIDATION -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- START SCRIPTS -->
+        <!-- START PLUGINS -->
+        <script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+
+
+        <!-- END PLUGINS -->
+
+        <!-- THIS PAGE PLUGINS -->
+        <script type='text/javascript' src='js/plugins/icheck/icheck.min.js'></script>
+        <script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
+
+        <script type="text/javascript" src="js/plugins/smartwizard/jquery.smartWizard-2.0.min.js"></script>
+        <script type="text/javascript" src="js/plugins/jquery-validation/jquery.validate.js"></script>
+        <!-- END PAGE PLUGINS -->
+
+        <!-- START TEMPLATE -->
+        <script type="text/javascript" src="js/settings.js"></script>
+
+        <script type="text/javascript" src="js/plugins.js"></script>
+        <script type="text/javascript" src="js/actions.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/submenuSlider.js"></script>
+        <!-- END TEMPLATE -->
+        <!-- END SCRIPTS -->
+
+    </body>
+
+</html>
