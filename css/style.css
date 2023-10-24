@@ -1280,7 +1280,7 @@ img {
 }
 
 .btn.btn-primary:hover {
-    background-color:#25934c;
+    background-color:#007cb7;
     color: black;
 }
 
@@ -2314,8 +2314,8 @@ a, .link, .button.transparent, .button.transparent:hover, .specials_slider_wrapp
 	{color: black !important;}
 
 .btn.btn-primary {
-    background-color: #1c8241;
-    border-color: #1c8241;
+    background-color: #005c96;
+    border-color: #005c96;
 }
 
 .text-secondary{
@@ -4601,7 +4601,7 @@ div.dataTables_wrapper div.dataTables_info{
 	width: 10px;
 	float: left;
 	border-radius: 50%;
-	background: #1c82415e;
+	background: #005c965e;
 }
 .point-indicator .director{
 	cursor: pointer;

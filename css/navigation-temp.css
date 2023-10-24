@@ -41464,8 +41464,8 @@ button.button, input.button, .button, #header ul.menu.full.opened li:not(.search
     background: #fff;
 }
 .btn.btn-primary {
-    background-color: #1c8241;
-    border-color: #1c8241;
+    background-color: #005c96;
+    border-color: #005c96;
 }
 .btn.btn-secondary {
     background-color: rgb(252, 192, 14);
@@ -41514,17 +41514,17 @@ button.button, input.button, .button, #header ul.menu.full.opened li:not(.search
 }
 .btn.btn-transparent {
     background: transparent;
-	border: 1px solid #1c8241;
-	color: #1c8241;
+	border: 1px solid #005c96;
+	color: #005c96;
 }
 
 .btn.btn-transparent:hover {
     background: transparent;
-	border: 2px solid #1c8241;
-	color: #1c8241;
+	border: 2px solid #005c96;
+	color: #005c96;
 }
 .text-primary{
-	color: #1c8241 !important;
+	color: #005c96 !important;
 }
 .btn.btn-transparent:hover, .btn.btn-transparent:active, .btn.btn-transparent:focus {
     background-color: #008dcb;
