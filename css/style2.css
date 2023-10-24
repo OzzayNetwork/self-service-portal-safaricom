@@ -270,7 +270,7 @@ li.nav-link {
   position: absolute;
   top: 0px;
   left: 0px;
-  background: #00431E;
+  background: #005c96;
   display: flex;
   cursor: pointer;
   z-index: 150;
@@ -301,7 +301,7 @@ li.nav-link {
 }
 
 .options-container .active {
-  border: solid 2px #00431E;
+  border: solid 2px #005c96;
 }
 
 /*end of buttons*/
@@ -332,8 +332,8 @@ footer p {
 /*options section styles*/
 
 .sub-link-container {
-  border-color: #066130;
-  background-color: #066130;
+  border-color: #005c96;
+  background-color: #005c96;
   width: 337px;
   height: 482px;
   padding: 0px !important;
@@ -413,7 +413,7 @@ footer p {
 }
 
 .android-download {
-  background-color: #066130;
+  background-color: #005c96;
   width: 266px;
   height: auto;
   z-index: 84;
@@ -459,7 +459,7 @@ footer p {
   position: absolute;
   top: 0;
   height: 100%;
-  background: #066130;
+  background: #005c96;
   flex-flow: column;
 }
 
