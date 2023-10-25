@@ -1444,9 +1444,10 @@ a, a:hover, a:focus, input:focus {
     font-size: 14px;
     padding: 19px 0 12px;
 /*    font-weight: 300;*/
+  border-color: #ffffff30;
 }
 .bg-dark {
-    background-color: #343a40!important;
+    background-color: #01004c!important;
 }
 .font-12 {
     font-size: 12px !important;
