@@ -192,6 +192,8 @@ setTimeout(explode, 5000);
     $(".rent1").addClass("left");
     $(".unified-biz-permit1").addClass("left");
     $('.land-rate1').addClass("left");
+	$('.liq-opt').addClass("left")
+	$('.public-health').addClass('left')
 
   }
 
@@ -227,6 +229,17 @@ setTimeout(explode, 5000);
     closesublinks();
     $('.construction1').removeClass("left");
   });
+
+  $('.liq-opt1').on("click", function() {
+    closesublinks();
+    $('.liq-opt').removeClass("left");
+  });
+
+  $('.public-health1').on("click", function() {
+    closesublinks();
+    $('.public-health').removeClass("left");
+  });
+
 
   $('.E-Wallet').on("click", function() {
     $('.wallet1').removeClass("left");
