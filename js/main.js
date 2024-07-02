@@ -128,8 +128,12 @@ setTimeout(explode, 5000);
 	});
 	
 	$('#close-pricepop').on('click',function(){
+		alert("clicked")
 		closepaypop();
+		
 	});
+
+	
 	
 	
 	
